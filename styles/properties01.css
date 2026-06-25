@@ -1,0 +1,42 @@
+/* properties01.css */
+.movie {
+    width: 600px;
+    height: max-content;
+    background-color: #ffe0f3;
+    border:1px solid #000;
+    border-radius: 25px;
+    padding: 40px 0 40px 20px;
+}
+.movie > h1 {
+    font-family: 'Noto Sans KR', '맑은 고딕';
+    font-size: 1.5em;
+    font-weight: 700;
+    line-height: 1.2;/* 120% */
+    /* h1과 contents_g 형제를 떨어트리기 위한 간격 값 입력 */
+    margin-bottom: 40px;
+}
+.movie > .contents_g {
+    margin-bottom: 40px;
+}
+.movie > .contents_g > .content {
+    font-family: 'Noto Sans KR', '맑은 고딕';
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+.movie > .contents_g > .content_s {
+    font-family: 'Noto Sans KR', '맑은 고딕';
+    font-size: 0.875em;
+    font-weight: 300;
+    line-height: 1.5;
+}
+.movie > .poster {
+    margin-bottom: 40px;
+}
+.movie > .poster > img {}
+.movie > .content_m {
+    font-family: 'Noto Sans KR', '맑은 고딕';
+    line-height: 1.7;
+    color: #222;
+    letter-spacing: 0em;
+}

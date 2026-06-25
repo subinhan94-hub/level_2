@@ -1,0 +1,35 @@
+.movie {
+    width: 450px;
+    height: 800px;
+    padding: 40px 0 40px 15px;
+    background-color: #1f1f1f;
+}
+.movie > h1 {
+    color: #ff0000;
+    font-size: 1.625em;
+    font-family: 'Pretendard' '맑은 고딕';
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.movie > .contents_g {
+        margin-bottom: 30px;
+}
+.movie > .contents_g > .contents {
+    color: #fff;
+    margin-bottom: 10px;
+    font-weight: 500;
+    line-height:1.1;
+}
+.movie > .contents_g > .contents_2 {
+    color: #fff;
+
+    font-weight: 500;
+}
+.movie > .img {margin-bottom: 30px;}
+.movie > .img > img {}
+.movie > .contents_s{
+    color: #fff;
+    font-size: 0.875em;
+    font-weight: 500;
+    line-height:1.5;
+}
