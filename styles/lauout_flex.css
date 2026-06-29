@@ -1,0 +1,41 @@
+.box {
+    width: 300px; height: 400px;
+}
+.box > h1 {}
+.box > p {}
+.box > * {
+    border-width:1px;
+    border-style:solid;
+    width: 100px; height: 100px;
+} /* `*`클래스 박스의 모든 자식들, `.` 클래스 `>`자식들 */
+/* ==================================개별cls */
+.box1 {
+    background-color: yellow;
+    /* 자식(item)을 정렬하고 싶을 땐 부모(container)에게 명령 */
+    display:flex;
+    /* flex만 넣었을 때 기본 값 : 메인축(수평) 줄바꿈(x) */
+    /* 1. 메인축 방향 속성 */
+    /* flex-direction:row 아이템의 메인축을 수평으로 방향 */
+    /* flex-direction: row-reverse; */
+    /* 2.줄바꿈 속성 (기본값 : nowrap) */
+    /* nowrap인 경우 px로 고정 값 설정한 대상이 자동으로 가변형(%)가 될 수 있다. */
+    /* 3. 메인축 방향 속성+줄바꿈 속성 묶음 속성 */
+    flex-flow:row nowrap;
+    /* 4. 메인축(수평, 수직)에 남은 공간에 정렬 속성 */
+    justify-content: space-around;
+    /* 5. 교차축(수평, 수직)에 남은 공간에 맞춘 2줄 이상 정렬 속성 */
+    /* align-content: space-around; */
+    /* 6. 교차축(수평, 수직)에 남은 공간에 맞춘 1줄 정렬 속성 */
+    align-items: center;
+    /* align-content와 align-items은 flex의 줄바꿈 속성에 따라 둘 중 1개만 작성한다. nowrap일 땐 align-items, wrap일땐 alian-content */
+}
+.box2 {
+    background-color: aqua;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.box1 > h1 {border-color: cadetblue;}
+.box1 > p {border-color: aquamarine;}
+.box2 > h1 {border-color: burlywood;}
+.box2 > p {border-color: darkcyan;}
